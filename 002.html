@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>first canvas page</title>
+    </head>
+    <body>
+            <canvas id="mycanvas" width="500" height="400">
+                    您的浏览器不支持canvas
+                 </canvas>
+                 <script>
+                     var cc=document.getElementById("mycanvas");
+                     var cxt=cc.getContext("2d");
+                     cxt.beginPath();
+                    cxt.arc(70,70,50,0,Math.PI/2,true);
+                    cxt.stroke();
+
+                    cxt.beginPath();
+                    cxt.arc(180,70,50,0,Math.PI/2,false);
+                    cxt.stroke();
+
+                    cxt.beginPath();
+                    cxt.arc(300,70,50,0,Math.PI/2,true);
+                    cxt.fill();
+
+                    cxt.beginPath();
+                    cxt.arc(400,70,50,0,Math.PI/2,false);
+                    cxt.fill();
+                 </script>
+    </body>
